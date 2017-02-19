@@ -1951,7 +1951,7 @@ is-number@^2.0.2, is-number@^2.1.0:
 
 is-posix-bracket@^0.1.0:
   version "0.1.1"
-  resolved "http://registry.npmjs.org/is-posix-bracket/-/is-posix-bracket-0.1.1.tgz#3334dc79774368e92f016e6fbc0a88f5cd6e6bc4"
+  resolved "https://registry.yarnpkg.com/is-posix-bracket/-/is-posix-bracket-0.1.1.tgz#3334dc79774368e92f016e6fbc0a88f5cd6e6bc4"
 
 is-primitive@^2.0.0:
   version "2.0.0"
@@ -3232,13 +3232,15 @@ tough-cookie@~2.3.0:
   dependencies:
     punycode "^1.4.1"
 
-transpher@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/transpher/-/transpher-0.7.0.tgz#3de1dee9eef003cce55022160f7742be0d57abf4"
+transpher@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/transpher/-/transpher-0.8.0.tgz#e19eb39a70c57112e3d68c6161e5a1dee610b08f"
   dependencies:
     ate "^0.10.0"
     babel-runtime "^6.23.0"
+    depher "^0.14.0"
     falzy "^0.13.0"
+    kein "^0.10.0"
 
 trim-right@^1.0.1:
   version "1.0.1"

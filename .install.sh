@@ -1,11 +1,13 @@
 yarn add \
 babel-runtime \
 budge \
+depher \
 falzy \
 filled \
 fluctuate \
 loosen \
 protype \
+pyck \
 transpher \
 truu \
 --save && \
@@ -19,11 +21,13 @@ webpack \
 --dev && \
 bower install \
 budge \
+depher \
 falzy \
 filled \
 fluctuate \
 loosen \
 protype \
+pyck \
 transpher \
 truu \
 --save \

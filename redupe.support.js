@@ -47,54 +47,70 @@
               		The target will be the one to be cloned and overridden by the source.
               
               		There can be multiple sources, the last source will be the last overriding source.
+              
+              		Passing disregard as true will not override existing properties.
               	@end-module-documentation
               
               	@include:
               		{
-              
+              			"budge": "budge",
+              			"depher": "depher",
+              			"falzy": "falzy",
+              			"filled": "filled",
+              			"fluctuate": "fluctuate",
+              			"loosen": "loosen",
+              			"protype": "protype",
+              			"pyck": "pyck",
+              			"transpher": "transpher",
+              			"truu": "truu"
               		}
               	@end-include
               */
 
 var budge = require("budge");
+var depher = require("depher");
 var falzy = require("falzy");
 var filled = require("filled");
 var fluctuate = require("fluctuate");
 var loosen = require("loosen");
 var protype = require("protype");
+var pyck = require("pyck");
 var transpher = require("transpher");
 var truu = require("truu");
 
-var redupe = function redupe(target, source) {
+var redupe = function redupe(target, source, disregard) {
 	/*;
-                                              	@meta-configuration:
-                                              		{
-                                              			"target:required": [
-                                              				"object",
-                                              				Array
-                                              			],
-                                              			"source": [
-                                              				"object",
-                                              				Array,
-                                              				"..."
-                                              			]
-                                              		}
-                                              	@end-meta-configuration
-                                              */
+                                                         	@meta-configuration:
+                                                         		{
+                                                         			"target:required": [
+                                                         				"object",
+                                                         				Array
+                                                         			],
+                                                         			"source": [
+                                                         				"object",
+                                                         				Array,
+                                                         				"..."
+                                                         			],
+                                                         			"disregard": "boolean"
+                                                         		}
+                                                         	@end-meta-configuration
+                                                         */
 
 	if (falzy(target) || !protype(target, OBJECT)) {
 		throw new Error("invalid target");
 	}
 
-	source = budge(arguments).filter(truu);
+	source = pyck(budge(arguments), OBJECT).filter(truu);
 
 	target = loosen(target, true);
+
+	disregard = depher(arguments, BOOLEAN, false);
 
 	if (filled(source)) {
 		source.forEach(function (source) {
 			source = loosen(source, true);
 
-			transpher(source, target);
+			transpher(source, target, disregard);
 		});
 	}
 
