@@ -1,0 +1,49 @@
+{
+  "name": "redupe",
+  "version": "0.0.0",
+  "description": "Clone and override property values.",
+  "main": "redupe.js",
+  "support": "redupe.support.js",
+  "deploy": "redupe.deploy.js",
+  "browser": "redupe.deploy.js",
+  "scripts": {
+    "build": "babel redupe.js --out-file redupe.support.js --source-maps && webpack --progress --display-modules",
+    "test": "mocha redupe-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volkovasystems/redupe.git"
+  },
+  "keywords": [
+    "clone",
+    "override",
+    "property",
+    "value",
+    "redupe"
+  ],
+  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volkovasystems/redupe/issues"
+  },
+  "homepage": "https://github.com/volkovasystems/redupe#readme",
+  "dependencies": {
+    "babel-runtime": "^6.23.0",
+    "budge": "^0.12.0",
+    "falzy": "^0.13.0",
+    "filled": "^0.10.0",
+    "fluctuate": "^0.2.0",
+    "loosen": "^0.6.0",
+    "protype": "^0.17.0",
+    "transpher": "^0.7.0",
+    "truu": "^0.11.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-core": "^6.23.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-latest": "^6.22.0",
+    "source-map-loader": "^0.1.6",
+    "webpack": "^2.2.1"
+  }
+}
