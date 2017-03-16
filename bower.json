@@ -1,11 +1,12 @@
 {
   "name": "redupe",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Clone and override property values.",
   "main": "redupe.deploy.js",
   "support": "redupe.support.js",
   "authors": [
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
   ],
   "license": "MIT",
   "keywords": [
@@ -23,52 +24,16 @@
     "test",
     "tests"
   ],
-  "resolutions": {
-    "depher": "^0.14.0",
-    "budge": "^0.12.0",
-    "pyck": "^0.13.0",
-    "truu": "^0.11.0",
-    "falzy": "^0.13.0",
-    "filled": "^0.10.0",
-    "protype": "^0.17.0",
-    "truly": "^0.13.0",
-    "harden": "^0.16.0",
-    "u200b": "^0.12.0",
-    "doubt": "^0.17.0",
-    "kein": "^0.10.0",
-    "falze": "^0.10.0",
-    "kount": "^0.9.0",
-    "dephall": "^0.12.0",
-    "plough": "^0.13.0",
-    "zelf": "^0.8.0",
-    "clazof": "^0.11.0",
-    "raze": "^0.19.0",
-    "stuffed": "^0.11.0",
-    "cemento": "^0.11.0",
-    "arid": "^0.14.0",
-    "diatom": "^0.11.0",
-    "optfor": "^0.14.0",
-    "asea": "^0.10.0",
-    "empt": "^0.12.0",
-    "decrease": "^0.11.0",
-    "een": "^0.5.0",
-    "llamalize": "^0.8.0",
-    "komento": "^0.13.0",
-    "optall": "^0.9.0",
-    "titlelize": "^0.9.0",
-    "realign": "^0.7.0",
-    "disdo": "^0.8.0"
-  },
   "dependencies": {
-    "budge": "^0.12.0",
-    "depher": "^0.14.0",
-    "falzy": "^0.13.0",
-    "filled": "^0.10.0",
-    "fluctuate": "^0.1.0",
-    "loosen": "^0.6.0",
-    "protype": "^0.17.0",
-    "pyck": "^0.13.0",
-    "transpher": "^0.8.0",
-    "truu": "^0.11.0"
+    "budge": "^0.17.0",
+    "depher": "^0.20.0",
+    "falzy": "^0.16.0",
+    "filled": "^0.16.0",
+    "fluctuate": "^0.4.0",
+    "loosen": "^0.11.0",
+    "protype": "^0.20.0",
+    "pyck": "^0.18.0",
+    "transpher": "^0.13.0",
+    "truu": "^0.20.0"
   }
 }
