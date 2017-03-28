@@ -34,6 +34,9 @@
 			"file": "redupe.js",
 			"module": "redupe",
 			"author": "Richeve S. Bebedor",
+			"contributors": [
+				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+			],
 			"eMail": "richeve.bebedor@gmail.com",
 			"repository": "https://github.com/volkovasystems/redupe.git",
 			"test": "redupe-test.js",
