@@ -1,6 +1,6 @@
 {
   "name": "redupe",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Clone and override property values.",
   "main": "redupe.js",
   "support": "redupe.support.js",
@@ -32,16 +32,16 @@
   "homepage": "https://github.com/volkovasystems/redupe#readme",
   "dependencies": {
     "babel-runtime": "^6.23.0",
-    "budge": "^0.23.0",
-    "depher": "^0.28.0",
+    "budge": "^0.25.0",
+    "depher": "^0.30.0",
     "falzy": "^0.19.0",
-    "filled": "^0.20.0",
-    "fluctuate": "^0.8.0",
-    "loosen": "^0.16.0",
+    "filled": "^0.21.0",
+    "fluctuate": "^0.10.0",
+    "loosen": "^0.18.0",
     "protype": "^0.21.0",
-    "pyck": "^0.24.0",
-    "transpher": "^0.19.0",
-    "truu": "^0.24.0"
+    "pyck": "^0.26.0",
+    "transpher": "^0.23.0",
+    "truu": "^0.25.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
