@@ -1,6 +1,6 @@
 {
   "name": "redupe",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "Clone and override property values.",
   "main": "redupe.deploy.js",
   "support": "redupe.support.js",
@@ -29,8 +29,8 @@
     "depher": "^0.32.0",
     "falzy": "^0.19.0",
     "filled": "^0.21.0",
-    "fluctuate": "^0.11.0",
-    "loosen": "^0.20.0",
+    "fluctuate": "^0.12.0",
+    "loosen": "^0.21.0",
     "protype": "^0.21.0",
     "pyck": "^0.28.0",
     "transpher": "^0.26.0",
