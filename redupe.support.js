@@ -56,7 +56,6 @@
               
               	@include:
               		{
-              			"budge": "budge",
               			"depher": "depher",
               			"falzy": "falzy",
               			"filled": "filled",
@@ -64,13 +63,13 @@
               			"loosen": "loosen",
               			"protype": "protype",
               			"pyck": "pyck",
+              			"shft": "shft",
               			"transpher": "transpher",
               			"truu": "truu"
               		}
               	@end-include
               */
 
-var budge = require("budge");
 var depher = require("depher");
 var falzy = require("falzy");
 var filled = require("filled");
@@ -78,6 +77,7 @@ var fluctuate = require("fluctuate");
 var loosen = require("loosen");
 var protype = require("protype");
 var pyck = require("pyck");
+var shft = require("shft");
 var transpher = require("transpher");
 var truu = require("truu");
 
@@ -103,7 +103,7 @@ var redupe = function redupe(target, source, disregard) {
 		throw new Error("invalid target");
 	}
 
-	source = pyck(budge(arguments), OBJECT).filter(truu);
+	source = pyck(shft(arguments), OBJECT).filter(truu);
 
 	target = loosen(target, true);
 
