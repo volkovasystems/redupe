@@ -1,6 +1,5 @@
 yarn add \
 babel-runtime \
-budge \
 depher \
 falzy \
 filled \
@@ -8,6 +7,7 @@ fluctuate \
 loosen \
 protype \
 pyck \
+shft \
 transpher \
 truu \
 --save && \
@@ -20,7 +20,6 @@ source-map-loader \
 webpack \
 --dev && \
 bower install \
-budge \
 depher \
 falzy \
 filled \
@@ -28,6 +27,7 @@ fluctuate \
 loosen \
 protype \
 pyck \
+shft \
 transpher \
 truu \
 --save \
