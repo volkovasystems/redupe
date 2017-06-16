@@ -1,8 +1,31 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<script
-			type="application/javascript"
-			src="./redupe.deploy.js">
-		</script>
+		<title>redupe unit test</title>
+
+		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+
+		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
+
+		<script type="application/javascript" src="./redupe.deploy.js"></script>
 	</head>
+
+	<body>
+		<div id="qunit"></div>
+
+		<div id="qunit-fixture"></div>
+
+		<script type="application/javascript">
+			QUnit.test( "redupe unit test", function( assert ) {
+
+				assert.deepEqual( redupe( { "hello": { "world": "yeah", "weeh": 1234 } }, { "hello": { "world": 123, "us": "hi" } } ),
+											{ "hello​.world": 123, "hello​.weeh": 1234, "hello​.us": "hi" },
+											"should be deeply equal" );
+
+				assert.equal( typeof redupe( { "hello": { "world": "yeah", "weeh": 1234 } }, { "hello": { "world": 123, "us": "hi" } } ),
+										 		"object", "should return 'object'" );
+
+			} );
+		</script>
+	</body>
 </html>
