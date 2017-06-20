@@ -5,7 +5,8 @@ assert.deepEqual( redupe( { "hello": { "world": "yeah", "weeh": 1234 } }, { "hel
 							{ "hello​.world": 123, "hello​.weeh": 1234, "hello​.us": "hi" },
 							"should be deeply equal" );
 
-assert.equal( typeof redupe( { "hello": { "world": "yeah", "weeh": 1234 } }, { "hello": { "world": 123, "us": "hi" } } ),
-						 		"object", "should return 'object'" );
+assert.equal( typeof redupe( { "hello": { "world": "yeah", "weeh": 1234 } },
+								{ "hello": { "world": 123, "us": "hi" } } ) == "object",
+						 		true, "should return true" );
 
 console.log( "ok" );
