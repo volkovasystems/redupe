@@ -62,7 +62,6 @@
 			"filled": "filled",
 			"fluctuate": "fluctuate",
 			"loosen": "loosen",
-			"protype": "protype",
 			"pyck": "pyck",
 			"shft": "shft",
 			"transpher": "transpher",
@@ -76,7 +75,6 @@ const falzy = require( "falzy" );
 const filled = require( "filled" );
 const fluctuate = require( "fluctuate" );
 const loosen = require( "loosen" );
-const protype = require( "protype" );
 const pyck = require( "pyck" );
 const shft = require( "shft" );
 const transpher = require( "transpher" );
@@ -100,7 +98,7 @@ const redupe = function redupe( target, source, disregard ){
 		@end-meta-configuration
 	*/
 
-	if( falzy( target ) || !protype( target, OBJECT ) ){
+	if( falzy( target ) || typeof target != "object" ){
 		throw new Error( "invalid target" );
 	}
 
