@@ -5,7 +5,6 @@ falzy \
 filled \
 fluctuate \
 loosen \
-protype \
 pyck \
 shft \
 transpher \
@@ -25,7 +24,6 @@ falzy \
 filled \
 fluctuate \
 loosen \
-protype \
 pyck \
 shft \
 transpher \
